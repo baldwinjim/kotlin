@@ -11,7 +11,7 @@ object DevOps_TestBuilds_Kotlin_KotlinBuild : BuildType({
     steps {
         script {
             name = "Directory Listing"
-            scriptContent = "ls"
+            scriptContent = "ls -la"
             param("org.jfrog.artifactory.selectedDeployableServer.useSpecs", "true")
         }
     }
